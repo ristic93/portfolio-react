@@ -5,6 +5,10 @@ import Skills from './components/skills/Skills';
 import Projects from './components/projects/Projects';
 import Contact from './components/contact/Contact';
 import Footer from './components/footer/Footer';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+AOS.init({duration: 2500});
 
 const App = () => {
   return (

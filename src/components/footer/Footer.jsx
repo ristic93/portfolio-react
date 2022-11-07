@@ -1,14 +1,17 @@
 import React from 'react';
 import './footer.css';
-import {BsLinkedin} from 'react-icons/bs';
-import {BsGithub} from 'react-icons/bs';
-import {BsInstagram} from 'react-icons/bs';
+import {BsLinkedin, BsGithub, BsInstagram} from 'react-icons/bs';
 
 const Footer = () => {
   return (
-    <section id='footer'>
+    <section id='footer' data-aos="zoom-in-up">
+      <span className='bottom-tag'>
+        &nbsp;&nbsp;&lt;/body&gt;
+        <br />
+        &lt;/html&gt;
+      </span>
       <footer>
-        <h3 style={{margin: '0'}}>Aleksandar Ristic</h3>
+        <h2 style={{margin: '0'}}>Aleksandar Ristic</h2>
         <div className="footer_socials">
           <a href="https://www.linkedin.com/in/aleksandar93/" target="blank"><BsLinkedin/></a>
           <a href="https://github.com/ristic93" target="blank"><BsGithub/></a>

@@ -1,10 +1,10 @@
 import React from 'react';
 import './contact.css';
-import {MdOutlineEmail} from 'react-icons/md';
-import {RiMessengerLine} from 'react-icons/ri';
-import {BsWhatsapp} from 'react-icons/bs';
+import {AiOutlineMail, AiOutlineWhatsApp} from 'react-icons/ai';
+import {RiSendPlane2Line} from 'react-icons/ri';
 import { useRef } from 'react';
 import emailjs from 'emailjs-com';
+import 'animate.css';
 
 const Contact = () => {
   const form = useRef();
@@ -19,41 +19,42 @@ const Contact = () => {
 
   return (
     <section id='contact'>
-        <h3>Contact me</h3>
+        <h2 data-aos="flip-left">Contact me</h2>
 
         <article className="container contact_container">
-          <div className="contact_options">
+          <div className="contact_options" data-aos="zoom-in-right">
               <div className="contact_option">
                   <a href="mailto:risticbro@gmail.com" target="_blank">
-                    <MdOutlineEmail style={{fontSize: '1.5rem', marginBottom: '0.5rem'}}/>
+                    <AiOutlineMail style={{fontSize: '1.5rem', marginBottom: '0.5rem'}} className='animate__animated animate__headShake animate__infinite'/>
                     <p>E-mail</p>
-                    <p>ristibro@gmail.com</p>
+                    <p>risticbro@gmail.com</p>
                     <p>Send mesagge</p>
                   </a>
               </div>
               <div className="contact_option">
-                  <a href="https://m.me/a.ristic93" target="_blank">
-                    <RiMessengerLine style={{fontSize: '1.5rem', marginBottom: '0.5rem'}}/>
-                    <p>Messenger</p>
-                    <p>a.ristic93</p>
-                    <p>Send message</p>
-                  </a>
-              </div>
-              <div className="contact_option">
                   <a href="https://api.whatsapp.com/send?phone=381692108991" target="_blank">
-                    <BsWhatsapp style={{fontSize: '1.5rem', marginBottom: '0.5rem'}}/>
+                    <AiOutlineWhatsApp style={{fontSize: '1.5rem', marginBottom: '0.5rem'}} className='animate__animated animate__headShake animate__infinite'/>
                     <p>WhatsApp</p>
                     <p>+381 69 210 89 91</p>
-                    <p>Send message</p>
+                    <p>Send message or call</p>
                   </a>
               </div>
           </div>
           {/* end of contact option */}
-          <form ref={form} onSubmit={sendEmail}>
-              <input type="text" name='name' placeholder='Your name' required/>
-              <input type="email" name='email' placeholder='Your E-mail address' required/>
-              <textarea name="message"  rows="7" placeholder='Your message...' required></textarea>
-              <button type='submit' className='btn btn-primary'>Send message</button>
+          <form ref={form} onSubmit={sendEmail} data-aos="zoom-in-left">
+              <div className='contact_form-div'>
+                <label htmlFor="">Name</label>
+                <input type="text" name='name' placeholder='Your name' required/>
+              </div>
+              <div className='contact_form-div'>
+                <label htmlFor="">Mail</label>
+                <input type="email" name='email' placeholder='Your E-mail address' required/>
+              </div>
+              <div className='contact_form-div'>
+                <label htmlFor="">Message</label>
+                <textarea name="message"  rows="7" placeholder='Your message...' required></textarea>
+              </div>
+              <button type='submit' className='btn btn-primary'>Send message <RiSendPlane2Line className='animate__animated animate__tada animate__infinite'/></button>
           </form>
         </article>
 

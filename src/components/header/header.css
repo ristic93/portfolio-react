@@ -1,7 +1,8 @@
 header {
     height: 100vh;
-    padding-top: 15rem;
+    padding-top: 12rem;
     overflow: hidden;
+    position: relative;
 }
 
 .container {
@@ -13,6 +14,49 @@ header {
     height: 100%;
     position: relative;
 }
+
+.top-tag {
+    position: absolute;
+    top: 6rem;
+    left: 10rem;
+    font-family: 'La Belle Aurore';
+    font-size: 2rem;
+    transition: var(--transition);
+}
+
+.top-tag:hover {
+    color: var(--color-primary);
+    text-shadow: 0 0 15px var(--color-primary);
+}
+
+.proffesion {
+    color: var(--color-primary);
+    position: relative;
+    font-size: 1.5rem;
+}
+
+.proffesion::before {
+    content: '';
+    display: inline;
+    height: .1rem;
+    width: 4rem;
+    background: var(--color-primary);
+    position: absolute;
+    top: 1rem;
+    right: 20rem;
+}
+
+.proffesion::after {
+    content: '';
+    display: block;
+    height: .1rem;
+    width: 4rem;
+    background: var(--color-primary);
+    position: absolute;
+    top: 1rem;
+    left: 20rem;
+}
+
 
 
 /********** Cta **********/
@@ -34,14 +78,8 @@ header {
     position: absolute;
     bottom: 3rem;
     font-size: 1.5rem;
+    height: 26rem;
 
-}
-
-.header_socials::after {
-    content: '';
-    width: 1px;
-    height: 15rem;
-    background: var(--color-primary);
 }
 
 /********** Scroll down **********/
@@ -50,8 +88,8 @@ header {
     position: absolute;
     right: -2.3rem;
     bottom: 22rem;
-    transform: rotate(90deg);
     font-weight: 500;
+    writing-mode: vertical-lr;
 }
 
 /********** media queries **********/
@@ -72,7 +110,6 @@ header {
 
 @media screen and (max-width: 1024px) {
     header {
-        height: 100vh;
         padding-top: 10rem;
         overflow: hidden;
     }
@@ -86,26 +123,32 @@ header {
         padding: 0 2rem;
         letter-spacing: 2px;
     }
+
     
 }
 
 @media screen and (max-width: 854px) {
     header {
-        height: 55vh;
-        padding-top: 0;
+        padding-top: 8rem;
     }
 
     .header_socials,
     .scroll_down {
         display: none;
     }
+
+    .top-tag {
+        position: absolute;
+        top: 1.5rem;
+        left: 1.5rem;
+        font-size: 1.5rem;
+    }
     
 }
 
 @media screen and (max-width: 719px) {
     header {
-        height: 70vh;
-        padding-top: 0;
+        padding-top: 6rem;
     }
 
     .header_socials,
@@ -117,8 +160,7 @@ header {
 
 @media screen and (max-width: 600px) {
     header {
-        height: 90vh;
-        padding-top: 0;
+        padding-top: 4rem;
     }
 
     h1 {
@@ -137,17 +179,25 @@ header {
         align-items: center;
         margin-top: 5rem;
     }
+
+    .proffesion::before {
+        visibility: hidden;
+    }
+    
+    .proffesion::after {
+        visibility: hidden;
+    }
+
 }
 
 @media screen and (max-width: 425px) {
     header {
-        height: 100vh;
-        padding-top: 0;
+        padding-top: 2rem;
     }
 
     h1 {
         text-align: center;
-        font-size: 2.7rem;
+        font-size: 2.5rem;
     }
 
     h2 {

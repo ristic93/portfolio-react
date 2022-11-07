@@ -16,6 +16,7 @@
 .projects_items:hover {
     background: transparent;
     border: 2px solid var(--color-primary);
+    box-shadow: 0 0 10px var(--color-primary);
 }
 
 .projects_image img {
@@ -42,7 +43,7 @@
 }
 
 .icon {
-    font-size: 2rem;
+    font-size: 1.5rem;
 }
 
 /********** media queries (medium devices) **********/

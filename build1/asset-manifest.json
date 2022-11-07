@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/static/css/main.829293f5.css",
+    "main.js": "/static/js/main.30b5b8dd.js",
+    "static/media/weather-app.png": "/static/media/weather-app.4951297df7bd222a83b3.png",
+    "static/media/CRUD-app.png": "/static/media/CRUD-app.53ccacab13e71454302e.png",
+    "static/media/react-shopping-list.png": "/static/media/react-shopping-list.db58fd07f22a5e2b8462.png",
+    "static/media/river-meni.png": "/static/media/river-meni.b6d5215902f6ab35e0ac.png",
+    "static/media/kod-brku-menu.png": "/static/media/kod-brku-menu.72c45d00904c96b0e4dd.png",
+    "static/media/e-commerce.png": "/static/media/e-commerce.bc9197c0dba7a50a173d.png",
+    "static/media/budget-app.png": "/static/media/budget-app.234f7dbde32e7bca0f09.png",
+    "static/media/about-me.png": "/static/media/about-me.ff2c13e2df33d8341743.png",
+    "static/media/cv.pdf": "/static/media/cv.0f2d9f558d99fc13c8cd.pdf",
+    "static/media/digital-clock.png": "/static/media/digital-clock.c67243a27b10954a0994.png",
+    "index.html": "/index.html",
+    "main.829293f5.css.map": "/static/css/main.829293f5.css.map",
+    "main.30b5b8dd.js.map": "/static/js/main.30b5b8dd.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.829293f5.css",
+    "static/js/main.30b5b8dd.js"
+  ]
+}

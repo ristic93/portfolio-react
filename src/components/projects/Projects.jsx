@@ -8,8 +8,8 @@ import img5 from '../../assets/CRUD-app.png';
 import img6 from '../../assets/digital-clock.png';
 import img7 from '../../assets/weather-app.png';
 import img8 from '../../assets/budget-app.png';
-import {FcRightDown2} from 'react-icons/fc';
-import {FcApproval} from 'react-icons/fc';
+import {FcRightDown2, FcApproval} from 'react-icons/fc';
+import 'animate.css';
 
 const Projects = () => {
 
@@ -82,10 +82,10 @@ const Projects = () => {
 
   return (
     <section id='projects'>
-        <h3>My projects</h3>
-        <p className='container' style={{textAlign: 'center', marginBottom: '5em'}}>Here you can check out some of my recent work <FcApproval style={{fontSize: '1.4rem'}}/></p>
+        <h2 data-aos="flip-left">My projects</h2>
+        <p className='container' style={{textAlign: 'center', marginBottom: '5em'}} data-aos="zoom-in-right">Here you can check out some of my recent work <FcApproval style={{fontSize: '1.4rem'}}/></p>
 
-      <article className="container projects_container">
+      <article className="container projects_container" data-aos="zoom-in-up">
         {
           data.map(({id, image, title, desc, github, live}) => {
             return (
@@ -95,7 +95,7 @@ const Projects = () => {
                   </div>
                   <p>{title}</p>
                   <details>
-                    <summary>Description < FcRightDown2 className='icon'/></summary>
+                    <summary>Description <FcRightDown2 className='icon animate__animated animate__shakeY animate__slower animate__infinite'/></summary>
                     {desc}
                   </details>
                   <div className="projects_cta">

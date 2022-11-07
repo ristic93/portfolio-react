@@ -2,6 +2,7 @@ footer {
     padding: 3rem 0;
     text-align: center;
     font-style: 1.2rem;
+    position: relative;
 }
 
 .footer_socials  {
@@ -15,4 +16,32 @@ footer {
 .bottom-bar {
     text-align: center;
     padding: 0 0 8rem 0;
+}
+
+.bottom-tag {
+    position: absolute;
+    bottom: 2rem;
+    left: 10rem;
+    font-family: 'La Belle Aurore';
+    font-size: 2rem;
+    transition: var(--transition);
+}
+
+.bottom-tag:hover {
+    color: var(--color-primary);
+    text-shadow: 0 0 15px var(--color-primary);
+}
+
+@media screen and (max-width: 854px) {
+    #footer {
+        padding-bottom: 3rem;
+    }
+    .bottom-tag {
+        position: absolute;
+        bottom: 1.5rem;
+        left: 1.5rem;
+        font-size: 1.5rem;
+        padding-bottom: 5rem;
+    }
+    
 }
