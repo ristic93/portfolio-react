@@ -24,10 +24,10 @@ const Contact = () => {
         <article className="container contact_container">
           <div className="contact_options" data-aos="zoom-in-right">
               <div className="contact_option">
-                  <a href="mailto:risticbro@gmail.com" target="_blank">
+                  <a href="mailto:ristic16210@gmail.com" target="_blank">
                     <AiOutlineMail style={{fontSize: '1.5rem', marginBottom: '0.5rem'}} className='animate__animated animate__headShake animate__infinite'/>
                     <p>E-mail</p>
-                    <p>risticbro@gmail.com</p>
+                    <p>ristic16210@gmail.com</p>
                     <p>Send mesagge</p>
                   </a>
               </div>

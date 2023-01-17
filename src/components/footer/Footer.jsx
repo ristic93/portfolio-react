@@ -19,7 +19,7 @@ const Footer = () => {
         </div>
       </footer>
         <div className="bottom-bar">
-          <p style={{margin: '0'}}>&copy; Aleksandar Ristic. All rights reserved <br /> 2022</p>
+          <p style={{margin: '0'}}>&copy; All rights reserved - Aleksandar Ristic <br /> {(new Date().getFullYear())}</p>
         </div>
     </section>
   )
