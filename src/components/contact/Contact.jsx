@@ -28,7 +28,7 @@ const Contact = () => {
                     <AiOutlineMail style={{fontSize: '1.5rem', marginBottom: '0.5rem'}} className='animate__animated animate__headShake animate__infinite'/>
                     <p>E-mail</p>
                     <p>ristic16210@gmail.com</p>
-                    <p>Send mesagge</p>
+                    <p>Send message</p>
                   </a>
               </div>
               <div className="contact_option">
