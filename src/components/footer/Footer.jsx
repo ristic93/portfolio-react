@@ -1,6 +1,7 @@
 import React from 'react';
 import './footer.css';
 import {BsLinkedin, BsGithub, BsInstagram} from 'react-icons/bs';
+import {SiFrontendmentor} from 'react-icons/si';
 
 const Footer = () => {
   return (
@@ -16,6 +17,7 @@ const Footer = () => {
           <a href="https://www.linkedin.com/in/aleksandar93/" target="blank"><BsLinkedin/></a>
           <a href="https://github.com/ristic93" target="blank"><BsGithub/></a>
           <a href="https://www.instagram.com/vops_popili/?next=%2F" target="blank"><BsInstagram/></a>
+          <a href="https://www.frontendmentor.io/profile/ristic93/solutions" target="blank"><SiFrontendmentor/></a>
         </div>
       </footer>
         <div className="bottom-bar">
