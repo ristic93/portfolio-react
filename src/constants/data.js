@@ -5,8 +5,17 @@ import img3 from '../assets/e-commerce.png';
 import img4 from '../assets/Social-media-dashboard.png';
 import img5 from '../assets/budget-app.png';
 import img6 from '../assets/webshop.png';
+import img7 from '../assets/landing-page.jpg';
 
 export const data = [
+    {
+        id: uuidv4(),
+        image: img7,
+        title: 'Single product page',
+        desc: 'Solution for E-commerce product page challenge on Frontend Mentor. Dynamic, completly responsive app made from scratch using React.js & Tailwind-CSS used Vite.js as module bundler. App have functionalities like add to cart, remove from cart, amount control, responsive galleries, light box gallery etc...',
+        github: 'https://github.com/ristic93/e-commerce-product-page',
+        live: 'https://ecommerce-landing-page16210.netlify.app'
+    },
     {
         id: uuidv4(),
         image: img6,
@@ -26,8 +35,8 @@ export const data = [
     {
         id: uuidv4(),
         image: img4,
-        title: 'Social Media Dashboard',
-        desc: 'Created using React.js & Tailwind-CSS used Vite.js as module bundler. Responsive for mobile devices and also implement dark & light mode.',
+        title: 'Social Media',
+        desc: 'Solution for Social media dashboard challenge on Frontend Mentor. Created using React.js & Tailwind-CSS used Vite.js as module bundler. Responsive for mobile devices and also implement dark & light mode.',
         github: 'https://github.com/ristic93/social-media-dashboard',
         live: 'https://social-media-dashboard93.netlify.app/'
     },
