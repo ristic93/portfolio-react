@@ -24,7 +24,11 @@ header {
     transition: var(--transition);
 }
 
-.top-tag:hover {
+.top-tag a {
+    color: var(--color-light);
+}
+
+.top-tag a:hover {
     color: var(--color-primary);
     text-shadow: 0 0 15px var(--color-primary);
 }
@@ -86,7 +90,7 @@ header {
 
 .scroll_down {
     position: absolute;
-    right: -2.3rem;
+    right: 0;
     bottom: 22rem;
     font-weight: 500;
     writing-mode: vertical-lr;

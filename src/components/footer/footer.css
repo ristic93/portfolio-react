@@ -31,7 +31,11 @@ footer {
     transition: var(--transition);
 }
 
-.bottom-tag:hover {
+.bottom-tag a {
+    color: var(--color-light);
+}
+
+.bottom-tag a:hover {
     color: var(--color-primary);
     text-shadow: 0 0 15px var(--color-primary);
 }

@@ -2,15 +2,23 @@ import { v4 as uuidv4 } from 'uuid';
 import img1 from '../assets/river-meni.png';
 import img2 from '../assets/kod-brku-menu.png';
 import img3 from '../assets/e-commerce.png';
-import img4 from '../assets/Social-media-dashboard.png';
-import img5 from '../assets/budget-app.png';
-import img6 from '../assets/webshop.png';
-import img7 from '../assets/landing-page.jpg';
+import img4 from '../assets/budget-app.png';
+import img5 from '../assets/webshop.png';
+import img6 from '../assets/landing-page.jpg';
+import img7 from '../assets/comments.png';
 
 export const data = [
     {
         id: uuidv4(),
         image: img7,
+        title: 'Comments App',
+        desc: 'In order to make this app I worked with React.js & SASS used Vite.js as module bundler. Also worked with JWT token for authentication & HTTP request methods - GET, POST, PUT & DELETE for posting, editing and deleting comments.',
+        github: 'https://github.com/ristic93/comments-app',
+        live: ''
+    },
+    {
+        id: uuidv4(),
+        image: img6,
         title: 'Single product page',
         desc: 'Solution for E-commerce product page challenge on Frontend Mentor. Dynamic, completly responsive app made from scratch using React.js & Tailwind-CSS used Vite.js as module bundler. App have functionalities like add to cart, remove from cart, amount control, responsive galleries, light box gallery etc...',
         github: 'https://github.com/ristic93/e-commerce-product-page',
@@ -18,7 +26,7 @@ export const data = [
     },
     {
         id: uuidv4(),
-        image: img6,
+        image: img5,
         title: 'FusionShop',
         desc: 'In order to make this web shop I worked with useState, useEffect, createContext & useContext, React-Router-Dom, SCSS and Material Ui for styling table in cart section.',
         github: 'https://github.com/ristic93/react-web-shop',
@@ -26,19 +34,11 @@ export const data = [
     },
     {
         id: uuidv4(),
-        image: img5,
+        image: img4,
         title: 'Budget App',
         desc: 'In order to make this app i worked with hooks: useState, useEffect, useContext and useReduce. Solved income and expense amounts by storing data in localstorage for XY days. Learned how to work with Context and Reducer.',
         github: 'https://github.com/ristic93/react-budget-app',
         live: 'https://budget-app-2022.netlify.app'
-    },
-    {
-        id: uuidv4(),
-        image: img4,
-        title: 'Social Media',
-        desc: 'Solution for Social media dashboard challenge on Frontend Mentor. Created using React.js & Tailwind-CSS used Vite.js as module bundler. Responsive for mobile devices and also implement dark & light mode.',
-        github: 'https://github.com/ristic93/social-media-dashboard',
-        live: 'https://social-media-dashboard93.netlify.app/'
     },
     {
         id: uuidv4(),
