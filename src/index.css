@@ -27,6 +27,22 @@
   --container-width-sm: 90%;
 }
 
+.light {
+  --color-bg: #171321;
+  --color-secondary: #0d314a;
+  --color-primary: #ffe742;
+  --color-white: #fff;
+  --color-light: #ffffff90;
+}
+
+.dark {
+  --color-bg: #F4F1C9;
+  --color-secondary: #c4c4cd;
+  --color-primary: #0D2231;
+  --color-white: #fff;
+  --color-light: #011D41;
+}
+
 html {
   scroll-behavior: smooth;
 }
@@ -37,10 +53,13 @@ html {
 
 body {
   font-family: 'Open Sans', sans-serif;
-  background: var(--color-bg);
-  color: var(--color-light);
   line-height: 1.7;
   user-select: none;
+}
+
+.App {
+  background: var(--color-bg);
+  color: var(--color-light);
 }
 
 /********** general styles **********/
@@ -90,6 +109,7 @@ h3 {
 }
 
 p {
+  color: var(--color-light);
   margin-top: 2rem;
   font-size: 1.2rem;
 }

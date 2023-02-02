@@ -3,6 +3,7 @@ header {
     padding-top: 12rem;
     overflow: hidden;
     position: relative;
+    background-color: var(--color-bg);
 }
 
 .container {
@@ -31,6 +32,20 @@ header {
 .top-tag a:hover {
     color: var(--color-primary);
     text-shadow: 0 0 15px var(--color-primary);
+}
+
+.toggle-mode {
+    position: absolute;
+    top: 6rem;
+    right: 13rem;
+    font-size: 2rem;
+    color: var(--color-primary);
+    cursor: pointer;
+}
+
+.toggleIcons:hover {
+    transition: 0.2s ease-in-out;
+    transform: scale(1.2);
 }
 
 .proffesion {

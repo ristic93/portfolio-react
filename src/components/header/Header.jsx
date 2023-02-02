@@ -1,17 +1,28 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./header.css";
 import Cta from "./Cta";
 import HeaderSocials from "./HeaderSocials";
 import { MdWavingHand } from "react-icons/md";
+import { FaSun, FaMoon } from "react-icons/fa";
 import "animate.css";
+import ThemeContext from "../../context/ThemeContext";
 
 const Header = () => {
+  const { theme, toggleTheme } = useContext(ThemeContext);
+
   return (
     <header>
       <span className="top-tag animate__animated animate__backInDown animate__slow animate__delay-0.5s">
         <a href="https://github.com/ristic93/portfolio-react" target="blank">
           &lt;body&gt;
         </a>
+      </span>
+      <span onClick={toggleTheme} className="toggle-mode animate__animated animate__backInDown animate__slow animate__delay-0.5s">
+        {theme === "light" ? (
+          <FaSun className="toggleIcons" />
+        ) : (
+          <FaMoon className="toggleIcons" />
+        )}
       </span>
       <article className="container header_container">
         <div className="animate__animated animate__swing animate__slow">
