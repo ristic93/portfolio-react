@@ -2,7 +2,9 @@
 
 ## Website link: https://portfolio-ristic93.netlify.app/
 
-![Portfolio React](https://user-images.githubusercontent.com/110178135/212047252-d9341bb7-17d7-4dac-b9ec-2898571a462e.png)
+![Aleksandar-Portfolio (2)](https://user-images.githubusercontent.com/110178135/216463741-e6373d4e-760d-4227-9b1f-ac2c539c5d3b.png)
+![Aleksandar-Portfolio (3)](https://user-images.githubusercontent.com/110178135/216463764-189a0c16-0cc4-4906-a25d-6cd7d902b7ed.png)
+
 
 # Getting Started with Create React App
 
