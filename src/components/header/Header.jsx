@@ -18,7 +18,7 @@ const Header = () => {
         </a>
       </span>
       <span onClick={toggleTheme} className="toggle-mode animate__animated animate__backInDown animate__slow animate__delay-0.5s">
-        {theme === "light" ? (
+        {theme === "dark" ? (
           <FaSun className="toggleIcons" />
         ) : (
           <FaMoon className="toggleIcons" />

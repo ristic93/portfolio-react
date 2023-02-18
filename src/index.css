@@ -27,7 +27,7 @@
   --container-width-sm: 90%;
 }
 
-.light {
+.dark {
   --color-bg: #171321;
   --color-secondary: #0d314a;
   --color-primary: #ffe742;
@@ -35,7 +35,7 @@
   --color-light: #ffffff90;
 }
 
-.dark {
+.light {
   --color-bg: #F4F1C9;
   --color-secondary: #c4c4cd;
   --color-primary: #0D2231;
