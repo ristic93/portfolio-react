@@ -28,14 +28,16 @@ const Sphere = () => {
         'sass',
         'tailwindcss',
         'typescript',
-        'googlechrome',
         'netlify',
         'slack',
         "vite",
         "materialui",
         "canva",
         "npm",
-        "nextdotjs"
+        "nextdotjs",
+        "nodedotjs",
+        "figma",
+        "firebase"
     ];
 
     const iconTags = iconSlugs.map((slug) => ({

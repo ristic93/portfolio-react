@@ -37,9 +37,7 @@ const about = () => {
             code whether it be HTML, CSS or JavaScript
             <FcMultipleDevices className="about_icons" />. Currently I am
             focused on learning React
-            <DiReact style={{ color: "#0076c6", fontSize: "1.5rem" }} /> and
-            Typescript
-            <SiTypescript style={{ color: "#0076c6", fontSize: "1.3rem" }} />,
+            <DiReact style={{ color: "#0076c6", fontSize: "1.5rem" }} />,
             so I would like to raise my knowledge to a higher level as well as
             improving knowledge in existing ones
             <FcPuzzle className="about_icons" />.
