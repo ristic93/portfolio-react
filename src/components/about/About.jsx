@@ -9,7 +9,6 @@ import {
   FcPortraitMode,
 } from "react-icons/fc";
 import { DiCss3, DiJavascript1, DiHtml5, DiReact } from "react-icons/di";
-import { SiTypescript } from "react-icons/si";
 
 const about = () => {
   return (
@@ -50,7 +49,7 @@ const about = () => {
           </p>
         </div>
         <div className="img" data-aos="zoom-in-left">
-          <img src={Img} alt="About image" />
+          <img src={Img} alt="About" />
         </div>
       </article>
     </section>
