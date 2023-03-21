@@ -17,7 +17,10 @@ const Header = () => {
           &lt;body&gt;
         </a>
       </span>
-      <span onClick={toggleTheme} className="toggle-mode animate__animated animate__backInDown animate__slow animate__delay-0.5s">
+      <span
+        onClick={toggleTheme}
+        className="toggle-mode animate__animated animate__backInDown animate__slow animate__delay-0.5s"
+      >
         {theme === "dark" ? (
           <FaSun className="toggleIcons" />
         ) : (
@@ -36,7 +39,7 @@ const Header = () => {
           <h1>Aleksandar Ristic</h1>
         </div>
         <span className="proffesion animate__animated animate__fadeInUp animate__slower animate__delay-1s">
-          Junior Front-End developer
+          Frontend developer
         </span>
         <div className="animate__animated animate__fadeInUp animate__slower animate__delay-3s">
           <p>

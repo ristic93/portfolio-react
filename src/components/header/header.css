@@ -62,7 +62,7 @@ header {
     background: var(--color-primary);
     position: absolute;
     top: 1rem;
-    right: 20rem;
+    right: 15rem;
 }
 
 .proffesion::after {
@@ -73,7 +73,7 @@ header {
     background: var(--color-primary);
     position: absolute;
     top: 1rem;
-    left: 20rem;
+    left: 15rem;
 }
 
 
