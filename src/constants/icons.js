@@ -37,7 +37,9 @@ const Sphere = () => {
         "nextdotjs",
         "nodedotjs",
         "figma",
-        "firebase"
+        "firebase",
+        "mongodb",
+        "express"
     ];
 
     const iconTags = iconSlugs.map((slug) => ({

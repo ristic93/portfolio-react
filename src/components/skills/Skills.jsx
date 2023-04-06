@@ -5,7 +5,7 @@ import Sphere from "../../constants/icons";
 const Skills = () => {
   return (
     <section id="skills">
-      <h2 data-aos="flip-left">My Skills</h2>
+      <h2 data-aos="flip-left">Skills & Technologies</h2>
       <p
         className="container"
         style={{ marginBottom: "2rem", textAlign: "center" }}
