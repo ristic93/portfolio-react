@@ -1,6 +1,6 @@
 # Portfolio Website
 
-## (Live Website Preview)[https://portfolio-ristic93.netlify.app]
+## [Live Website Preview](https://portfolio-ristic93.netlify.app)
 
 ## Technologies used:
 
