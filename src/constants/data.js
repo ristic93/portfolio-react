@@ -10,7 +10,7 @@ export const data = [
     {
         id: uuidv4(),
         image: img6,
-        title: 'Employyes App',
+        title: 'Employees App',
         desc: 'Users should be able to register/login & create/edit/delete employees and tasks. Authentication has been implemented as well as fields for searching employees and filtering tasks.',
         tags: '#react #firebase #sass',
         github: 'https://github.com/ristic93/react-crud-firebase',
