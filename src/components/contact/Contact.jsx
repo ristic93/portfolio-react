@@ -32,7 +32,7 @@ const Contact = () => {
           <h3>Contact me</h3>
           <Tilt>
             <div className="contact_option">
-              <a href="mailto:ristic16210@gmail.com" target="_blank">
+              <a href="mailto:ristic16210@gmail.com" target="_blank" rel="noreferrer">
                 <AiOutlineMail
                   style={{ fontSize: "1.5rem", marginBottom: "0.5rem" }}
                   className="animate__animated animate__headShake animate__infinite"
@@ -47,7 +47,7 @@ const Contact = () => {
             <div className="contact_option">
               <a
                 href="https://api.whatsapp.com/send?phone=381692108991"
-                target="_blank"
+                target="_blank" rel="noreferrer"
               >
                 <AiOutlineWhatsApp
                   style={{ fontSize: "1.5rem", marginBottom: "0.5rem" }}
@@ -62,7 +62,7 @@ const Contact = () => {
         </div>
         <form ref={form} onSubmit={sendEmail} data-aos="zoom-in-left">
           <div className="contact_form-div">
-            <label htmlFor="">Name</label>
+            <label>Name</label>
             <input
               type="text"
               name="name"
@@ -71,7 +71,7 @@ const Contact = () => {
             />
           </div>
           <div className="contact_form-div">
-            <label htmlFor="">Mail</label>
+            <label>Mail</label>
             <input
               type="email"
               name="email"
@@ -80,7 +80,7 @@ const Contact = () => {
             />
           </div>
           <div className="contact_form-div">
-            <label htmlFor="">Message</label>
+            <label>Message</label>
             <textarea
               name="message"
               rows="7"

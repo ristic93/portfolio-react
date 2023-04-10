@@ -1,3 +1,4 @@
+import ThemeContext from "./context/ThemeContext";
 import Header from "./components/header/Header";
 import Nav from "./components/nav/Nav";
 import About from "./components/about/About";
@@ -7,7 +8,7 @@ import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import AOS from "aos";
 import "aos/dist/aos.css";
-import ThemeContext from "./context/ThemeContext";
+
 import { useContext } from "react";
 
 AOS.init({ duration: 2500 });

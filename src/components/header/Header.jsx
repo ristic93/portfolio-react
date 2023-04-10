@@ -11,9 +11,9 @@ const Header = () => {
   const { theme, toggleTheme } = useContext(ThemeContext);
 
   return (
-    <header>
+    <header id="home">
       <span className="top-tag animate__animated animate__backInDown animate__slow animate__delay-0.5s">
-        <a href="https://github.com/ristic93/portfolio-react" target="blank">
+        <a href="https://github.com/ristic93/portfolio-react" target="_blank" rel="noreferrer">
           &lt;body&gt;
         </a>
       </span>
