@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react";
+import React, { useState, useEffect, useContext } from "react";
 import "./nav.css";
 import { AiOutlineHome, AiOutlineUser } from "react-icons/ai";
 import { BiCodeAlt } from "react-icons/bi";
@@ -10,16 +10,51 @@ const Nav = () => {
   const [activeNav, setActiveNav] = useState("#");
   const { theme } = useContext(ThemeContext);
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const currentScrollPos = window.pageYOffset;
+      const aboutSection = document.querySelector("#about");
+      const skillsSection = document.querySelector("#skills");
+      const projectsSection = document.querySelector("#projects");
+      const contactSection = document.querySelector("#contact");
+
+      if (currentScrollPos < aboutSection.offsetTop - 100) {
+        setActiveNav("#home");
+      } else if (
+        currentScrollPos >= aboutSection.offsetTop - 100 &&
+        currentScrollPos < skillsSection.offsetTop - 100
+      ) {
+        setActiveNav("#about");
+      } else if (
+        currentScrollPos >= skillsSection.offsetTop - 100 &&
+        currentScrollPos < projectsSection.offsetTop - 100
+      ) {
+        setActiveNav("#skills");
+      } else if (
+        currentScrollPos >= projectsSection.offsetTop - 100 &&
+        currentScrollPos < contactSection.offsetTop - 100
+      ) {
+        setActiveNav("#projects");
+      } else if (currentScrollPos >= contactSection.offsetTop - 100) {
+        setActiveNav("#contact");
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
   return (
     <nav>
       <a
-        href="#"
+        href="#home"
         title="Home"
         onClick={() => {
-          setActiveNav("#");
+          setActiveNav("#home");
         }}
         className={
-          activeNav === "#"
+          activeNav === "#home"
             ? "active"
             : "" || theme === "light"
             ? "light"
