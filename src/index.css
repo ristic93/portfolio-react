@@ -19,6 +19,7 @@
   --color-primary: #ffe742;
   --color-white: #fff;
   --color-light: #ffffff90;
+  --body-font: 'Open Sans', sans-serif;
 
   --transition: .3s linear;
 
@@ -52,7 +53,7 @@ html {
 }
 
 body {
-  font-family: 'Open Sans', sans-serif;
+  font-family: var(--body-font);
   line-height: 1.7;
   user-select: none;
 }

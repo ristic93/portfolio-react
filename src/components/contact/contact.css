@@ -75,6 +75,7 @@ input, textarea {
     color: var(--color-light); 
     transition: var(--transition);
     font-size: 1.2rem;
+    font-family: var(--body-font);
 }
 
 input:hover, textarea:hover {

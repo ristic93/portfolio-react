@@ -39,7 +39,7 @@ export const data = [
         image: img3,
         title: 'FusionShop',
         desc: 'In order to make this web shop I worked with useState, useEffect, ContextApi & React-Router-Dom. Data is fetched from API. User should be able to add or delete items from cart.',
-        tags: '#react #scss',
+        tags: '#react #sass',
         github: 'https://github.com/ristic93/react-web-shop',
         live: 'https://fusionshop.netlify.app'
     },
