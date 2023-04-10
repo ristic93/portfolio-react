@@ -91,4 +91,8 @@
     flex-direction: column;
     gap: 10px;
   }
+
+  .projects_info span {
+    text-align: center;
+  }
 }
