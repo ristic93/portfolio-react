@@ -21,8 +21,8 @@ const Projects = () => {
       <article className="container projects_container" data-aos="zoom-in-up">
         {data.map(({ id, image, title, desc, tags, github, live }) => {
           return (
-            <Tilt>
-              <div key={id} className="projects_items">
+            <Tilt key={id}>
+              <div className="projects_items">
                 <div className="projects_image">
                   <img src={image} alt={title} className="abcd" />
                 </div>
@@ -31,11 +31,11 @@ const Projects = () => {
                 <div className="projects_info">
                   <span>{tags}</span>
                   <div className="projects_cta">
-                    <a href={github} target="_blank" title="github">
+                    <a href={github} target="_blank" title="github" rel="noreferrer">
                       <AiFillGithub className="icon" />
                     </a>
                     {live === "" ? null : (
-                      <a href={live} target="_blank" title="live">
+                      <a href={live} target="_blank" title="live" rel="noreferrer">
                         <AiFillEye className="icon" />
                       </a>
                     )}

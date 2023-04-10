@@ -1,55 +1,11 @@
-footer {
-    padding: 3rem 0;
-    text-align: center;
-    font-style: 1.2rem;
-    position: relative;
-}
-
-.footer_socials  {
-    font-size: 2.5rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 2rem;
-}
-
-.footer_socials a:hover {
-    transform: scale(1.2);
-}
-
-.bottom-bar {
-    text-align: center;
-    padding: 0 0 8rem 0;
-}
-
-.bottom-tag {
-    position: absolute;
-    bottom: 2rem;
-    left: 10rem;
-    font-family: 'La Belle Aurore';
-    font-size: 2rem;
-    transition: var(--transition);
-}
-
-.bottom-tag a {
-    color: var(--color-light);
-}
-
-.bottom-tag a:hover {
-    color: var(--color-primary);
-    text-shadow: 0 0 15px var(--color-primary);
-}
-
-@media screen and (max-width: 854px) {
-    #footer {
-        padding-bottom: 3rem;
-    }
-    .bottom-tag {
-        position: absolute;
-        bottom: 1.5rem;
-        left: 1.5rem;
-        font-size: 1.5rem;
-        padding-bottom: 5rem;
-    }
-    
+footer{padding:3rem 0;text-align:center;font-style:1.2rem;position:relative}
+.footer_socials{font-size:2.5rem;display:flex;flex-direction:row;justify-content:center;gap:2rem}
+.footer_socials a:hover{transform:scale(1.2)}
+.bottom-bar{text-align:center;padding:0 0 8rem 0}
+.bottom-tag{position:absolute;bottom:2rem;left:10rem;font-family:'La Belle Aurore';font-size:2rem;transition:var(--transition)}
+.bottom-tag a{color:var(--color-light)}
+.bottom-tag a:hover{color:var(--color-primary);text-shadow:0 0 15px var(--color-primary)}
+@media screen and (max-width:854px){
+#footer{padding-bottom:3rem}
+.bottom-tag{position:absolute;bottom:1.5rem;left:1.5rem;font-size:1.5rem;padding-bottom:5rem}
 }

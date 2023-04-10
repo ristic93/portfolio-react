@@ -7,7 +7,7 @@ const Footer = () => {
   return (
     <section id="footer" data-aos="zoom-in-up">
       <span className="bottom-tag">
-        <a href="https://github.com/ristic93/portfolio-react" target="blank" >
+        <a href="https://github.com/ristic93/portfolio-react" target="_blank" rel="noreferrer" >
           &nbsp;&nbsp;&lt;/body&gt;
           <br />
           &lt;/html&gt;
@@ -16,21 +16,21 @@ const Footer = () => {
       <footer>
         <h2 style={{ margin: "0" }}>Aleksandar Ristic</h2>
         <div className="footer_socials">
-          <a href="https://www.linkedin.com/in/aleksandar93/" target="blank" title="Linkedin">
+          <a href="https://www.linkedin.com/in/aleksandar93/" target="_blank" title="Linkedin" rel="noreferrer">
             <BsLinkedin />
           </a>
-          <a href="https://github.com/ristic93" target="blank" title="GitHub">
+          <a href="https://github.com/ristic93" target="_blank" title="GitHub" rel="noreferrer">
             <BsGithub />
           </a>
           <a
             href="https://www.instagram.com/vops_popili/?next=%2F"
-            target="blank" title="Instagram"
+            target="_blank" title="Instagram" rel="noreferrer"
           >
             <BsInstagram />
           </a>
           <a
             href="https://www.frontendmentor.io/profile/ristic93/solutions"
-            target="blank" title="Frontend Mentor"
+            target="_blank" title="Frontend Mentor" rel="noreferrer"
           >
             <SiFrontendmentor />
           </a>

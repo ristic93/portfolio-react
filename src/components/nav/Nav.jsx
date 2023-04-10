@@ -13,7 +13,7 @@ const Nav = () => {
   return (
     <nav>
       <a
-        href="#"
+        href="#home"
         title="Home"
         onClick={() => {
           setActiveNav("#");
@@ -22,8 +22,8 @@ const Nav = () => {
           activeNav === "#"
             ? "active"
             : "" || theme === "light"
-            ? "light"
-            : "dark"
+              ? "light"
+              : "dark"
         }
       >
         <AiOutlineHome />
@@ -38,8 +38,8 @@ const Nav = () => {
           activeNav === "#about"
             ? "active"
             : "" || theme === "light"
-            ? "light"
-            : "dark"
+              ? "light"
+              : "dark"
         }
       >
         <AiOutlineUser />
@@ -54,8 +54,8 @@ const Nav = () => {
           activeNav === "#skills"
             ? "active"
             : "" || theme === "light"
-            ? "light"
-            : "dark"
+              ? "light"
+              : "dark"
         }
       >
         <BiCodeAlt />
@@ -70,8 +70,8 @@ const Nav = () => {
           activeNav === "#projects"
             ? "active"
             : "" || theme === "light"
-            ? "light"
-            : "dark"
+              ? "light"
+              : "dark"
         }
       >
         <FiMonitor />
@@ -86,8 +86,8 @@ const Nav = () => {
           activeNav === "#contact"
             ? "active"
             : "" || theme === "light"
-            ? "light"
-            : "dark"
+              ? "light"
+              : "dark"
         }
       >
         <TiMessages />
