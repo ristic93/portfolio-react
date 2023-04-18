@@ -7,35 +7,35 @@ import { TiMessages } from "react-icons/ti";
 import ThemeContext from "../../context/ThemeContext";
 
 const Nav = () => {
-  const [activeNav, setActiveNav] = useState("#");
+  const [activeNav, setActiveNav] = useState("#home");
   const { theme } = useContext(ThemeContext);
 
   useEffect(() => {
     const handleScroll = () => {
-      const currentScrollPos = window.pageYOffset;
+      const currentScrollPosition = window.pageYOffset;
       const aboutSection = document.querySelector("#about");
       const skillsSection = document.querySelector("#skills");
       const projectsSection = document.querySelector("#projects");
       const contactSection = document.querySelector("#contact");
 
-      if (currentScrollPos < aboutSection.offsetTop - 100) {
+      if (currentScrollPosition < aboutSection.offsetTop - 100) {
         setActiveNav("#home");
       } else if (
-        currentScrollPos >= aboutSection.offsetTop - 100 &&
-        currentScrollPos < skillsSection.offsetTop - 100
+        currentScrollPosition >= aboutSection.offsetTop - 100 &&
+        currentScrollPosition < skillsSection.offsetTop - 100
       ) {
         setActiveNav("#about");
       } else if (
-        currentScrollPos >= skillsSection.offsetTop - 100 &&
-        currentScrollPos < projectsSection.offsetTop - 100
+        currentScrollPosition >= skillsSection.offsetTop - 100 &&
+        currentScrollPosition < projectsSection.offsetTop - 100
       ) {
         setActiveNav("#skills");
       } else if (
-        currentScrollPos >= projectsSection.offsetTop - 100 &&
-        currentScrollPos < contactSection.offsetTop - 100
+        currentScrollPosition >= projectsSection.offsetTop - 100 &&
+        currentScrollPosition < contactSection.offsetTop - 100
       ) {
         setActiveNav("#projects");
-      } else if (currentScrollPos >= contactSection.offsetTop - 100) {
+      } else if (currentScrollPosition >= contactSection.offsetTop - 100) {
         setActiveNav("#contact");
       }
     };
