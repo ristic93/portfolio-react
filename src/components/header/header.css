@@ -19,7 +19,7 @@ header {
 .top-tag {
     position: absolute;
     top: 6rem;
-    left: 10rem;
+    left: 11rem;
     font-family: 'La Belle Aurore';
     font-size: 2rem;
     transition: var(--transition);
@@ -45,7 +45,7 @@ header {
 
 .toggleIcons:hover {
     transition: 0.2s ease-in-out;
-    transform: scale(1.2);
+    transform: scale(1.2) rotate(-35deg);
 }
 
 .proffesion {
@@ -76,8 +76,6 @@ header {
     left: 15rem;
 }
 
-
-
 /********** Cta **********/
 
 .cta {
@@ -98,7 +96,10 @@ header {
     bottom: 3rem;
     font-size: 1.5rem;
     height: 26rem;
+}
 
+.header_socials a:hover {
+    color: var(--color-primary);
 }
 
 /********** Scroll down **********/

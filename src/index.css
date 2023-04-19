@@ -21,7 +21,7 @@
   --color-light: #ffffff90;
   --body-font: 'Open Sans', sans-serif;
 
-  --transition: .3s linear;
+  --transition: 0.3s linear;
 
   --container-width-lg: 75%;
   --container-width-md: 85%;

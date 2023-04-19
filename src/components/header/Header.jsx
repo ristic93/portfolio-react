@@ -14,7 +14,7 @@ const Header = () => {
     <header id="home">
       <span className="top-tag animate__animated animate__backInDown animate__slow animate__delay-0.5s">
         <a href="https://github.com/ristic93/portfolio-react" target="blank">
-          &lt;body&gt;
+          &lt;AR&gt;
         </a>
       </span>
       <span
