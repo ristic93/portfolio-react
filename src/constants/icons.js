@@ -39,7 +39,10 @@ const Sphere = () => {
         "figma",
         "firebase",
         "mongodb",
-        "express"
+        "express",
+        "wordpress",
+        "vercel",
+        "jira"
     ];
 
     const iconTags = iconSlugs.map((slug) => ({
